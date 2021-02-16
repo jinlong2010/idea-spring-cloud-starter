@@ -17,7 +17,4 @@ public class HelloController {
     public String say() {
         return "say!";
     }
-
-    public static void main(String[] args) {
-    }
 }

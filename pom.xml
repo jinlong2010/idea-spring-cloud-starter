@@ -7,10 +7,12 @@
     <groupId>org.kstart.idea.springcloud</groupId>
     <artifactId>idea-spring-cloud-starter</artifactId>
     <version>1.0-SNAPSHOT</version>
+
     <modules>
         <module>idea-spring-cloud-app</module>
         <module>idea-spring-cloud-maven-plugin</module>
     </modules>
+
     <packaging>pom</packaging>
 
     <properties>
@@ -38,16 +40,16 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>2.2.2.RELEASE</version>
+                <version>2.2.13.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
 
-            <!--spring cloud Hoxton.SR1 -->
+            <!--spring cloud Hoxton.SR10 -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Hoxton.SR1</version>
+                <version>Hoxton.SR10</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -103,7 +105,6 @@
                 <version>2.2.2.RELEASE</version>
             </dependency>
         </dependencies>
-
     </dependencyManagement>
 
     <build>
@@ -119,16 +120,4 @@
             </plugin>
         </plugins>
     </build>
-
-    <reporting>
-        <plugins>
-            <plugin>
-                <groupId>org.sonarsource.scanner.maven</groupId>
-                <artifactId>sonar-maven-plugin</artifactId>
-                <version>3.8.0.2131</version>
-            </plugin>
-        </plugins>
-    </reporting>
-
-
 </project>
